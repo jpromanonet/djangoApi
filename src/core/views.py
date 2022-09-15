@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def test_view(request):
     data = {
-        'name': "John",
+        'name': 'John',
         'age': 28
     }
-    return JsonResponse(data)
+    return JsonResponse(data, safe=False)
