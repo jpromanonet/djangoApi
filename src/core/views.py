@@ -8,7 +8,8 @@ from rest_framework.views import APIView
 class TestView(APIView):
     def get(self, request, *args, **kwargs):
         data = {
-            'name': 'Juan',
-            'age': 28
+            'name': 'Dani ta chiquita',
+            'Pregunta': '¿donde estamos?',
+            'age': 25
         }
         return Response(data)
