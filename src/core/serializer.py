@@ -4,7 +4,7 @@ from rest_framework import serializer
 from django.db import models
 from django.db import get_user_model
 
-User = get_user_model
+User = get_user_model()
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
